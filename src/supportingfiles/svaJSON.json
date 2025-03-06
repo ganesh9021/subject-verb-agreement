@@ -1,0 +1,1546 @@
+[
+  {
+    "sentenceArray": [
+      "Gold_subject",
+      "and",
+      "Silver_subject",
+      "is_hv",
+      "/",
+      "are_hv",
+      "precious",
+      "metals"
+    ],
+    "sentenceArray1": [
+      "Gold_subject",
+      "and",
+      "Silver_subject",
+      "is/are",
+      "precious",
+      "metals"
+    ],
+    "correctHVerb": "are",
+    "questionCategory": "what",
+    "subjectNumber": "plural",
+    "verbNumber": null,
+    "completeSubject": "Gold and Silver",
+    "subjectVerbAgreementRuleIndex": "0"
+  },
+  {
+    "sentenceArray": [
+      "He_subject",
+      "and",
+      "I_subject",
+      "was_hv",
+      "/",
+      "were_hv",
+      "at",
+      "Oxford",
+      "University",
+      "together"
+    ],
+    "sentenceArray1": [
+      "He_subject",
+      "and",
+      "I_subject",
+      "was/were",
+      "at",
+      "Oxford",
+      "University",
+      "together"
+    ],
+    "correctHVerb": "were",
+    "questionCategory": "which/who",
+    "subjectNumber": "plural",
+    "completeSubject": "He and I",
+    "subjectVerbAgreementRuleIndex": "0"
+  },
+  {
+    "sentenceArray": [
+      "Oil_subject",
+      "and",
+      "water_subject",
+      "do_hv",
+      "/",
+      "does_hv",
+      "not",
+      "mix"
+    ],
+    "sentenceArray1": [
+      "Oil_subject",
+      "and",
+      "water_subject",
+      "do/does",
+      "not",
+      "mix"
+    ],
+    "correctHVerb": "do",
+    "questionCategory": "which/who",
+    "subjectNumber": "plural",
+    "completeSubject": "Oil and water",
+    "subjectVerbAgreementRuleIndex": "0"
+  },
+  {
+    "sentenceArray": [
+      "Time_subject",
+      "and",
+      "tide_subject",
+      "wait_mv",
+      "/",
+      "waits_mv",
+      "for",
+      "no",
+      "man"
+    ],
+    "sentenceArray1": [
+      "Time_subject",
+      "and",
+      "tide_subject",
+      "wait/waits",
+      "for",
+      "no",
+      "man"
+    ],
+    "correctHVerb": "waits",
+    "questionCategory": "who/what",
+    "subjectNumber": "singular",
+    "completeSubject": "Time and tide",
+    "subjectVerbAgreementRuleIndex": "1"
+  },
+  {
+    "sentenceArray": [
+      "Age_subject",
+      "and",
+      "experience_subject",
+      "bring_mv",
+      "/",
+      "brings_mv",
+      "wisdom",
+      "to",
+      "the",
+      "man"
+    ],
+    "sentenceArray1": [
+      "Age_subject",
+      "and",
+      "experience_subject",
+      "bring/brings",
+      "wisdom",
+      "to",
+      "the",
+      "man"
+    ],
+    "correctHVerb": "brings",
+    "questionCategory": "who/what",
+    "subjectNumber": "singular",
+    "completeSubject": "Age and experience",
+    "subjectVerbAgreementRuleIndex": "1"
+  },
+  {
+    "sentenceArray": [
+      "Slow_subject",
+      "and",
+      "steady_subject",
+      "win_mv",
+      "/",
+      "wins_mv",
+      "the",
+      "race"
+    ],
+    "sentenceArray1": [
+      "Slow_subject",
+      "and",
+      "steady_subject",
+      "win/wins",
+      "the",
+      "race"
+    ],
+    "correctHVerb": "wins",
+    "questionCategory": "who/what",
+    "subjectNumber": "singular",
+    "completeSubject": "Slow and steady",
+    "subjectVerbAgreementRuleIndex": "1"
+  },
+  {
+    "sentenceArray": [
+      "Silver_subject",
+      "as",
+      "well",
+      "as",
+      "cotton_subject",
+      "have_hv",
+      "/",
+      "has_hv",
+      "fallen",
+      "in",
+      "price"
+    ],
+    "sentenceArray1": [
+      "Silver_subject",
+      "as",
+      "well",
+      "as",
+      "cotton_subject",
+      "have/has",
+      "fallen",
+      "in",
+      "price"
+    ],
+    "correctHVerb": "has",
+    "questionCategory": "what",
+    "subjectNumber": "singular",
+    "completeSubject": "Silver as well as cotton",
+    "subjectVerbAgreementRuleIndex": "2"
+  },
+  {
+    "sentenceArray": [
+      "The",
+      "Mayor_subject",
+      "with",
+      "its",
+      "councillors_subject",
+      "is_hv",
+      "/",
+      "are_hv",
+      "to",
+      "be",
+      "present"
+    ],
+    "sentenceArray1": [
+      "The",
+      "Mayor_subject",
+      "with",
+      "its",
+      "councillors_subject",
+      "is/are",
+      "to",
+      "be",
+      "present"
+    ],
+    "correctHVerb": "is",
+    "questionCategory": "who",
+    "subjectNumber": "singular",
+    "completeSubject": "The Mayor with its councillors",
+    "subjectVerbAgreementRuleIndex": "2"
+  },
+  {
+    "sentenceArray": [
+      "My",
+      "uncle_subject",
+      "as",
+      "well",
+      "as",
+      "guardian_subject",
+      "want_mv",
+      "/",
+      "wants_mv",
+      "me",
+      "to",
+      "start",
+      "my",
+      "own",
+      "business"
+    ],
+    "sentenceArray1": [
+      "My",
+      "uncle_subject",
+      "as",
+      "well",
+      "as",
+      "guardian_subject",
+      "want/wants",
+      "me",
+      "to",
+      "start",
+      "my",
+      "own",
+      "business"
+    ],
+    "correctHVerb": "wants",
+    "questionCategory": "who",
+    "subjectNumber": "singular",
+    "completeSubject": "My uncle as well as guardian",
+    "subjectVerbAgreementRuleIndex": "2"
+  },
+  {
+    "sentenceArray": [
+      "The",
+      "patriot_subject",
+      "as",
+      "well",
+      "as",
+      "orator_subject",
+      "have_hv",
+      "/",
+      "has_hv",
+      "died",
+      "in",
+      "the",
+      "war"
+    ],
+    "sentenceArray1": [
+      "The",
+      "patriot_subject",
+      "as",
+      "well",
+      "as",
+      "orator_subject",
+      "have/has",
+      "died",
+      "in",
+      "the",
+      "war"
+    ],
+    "correctHVerb": "has",
+    "questionCategory": "who",
+    "subjectNumber": "singular",
+    "completeSubject": "The patriot as well as orator",
+    "subjectVerbAgreementRuleIndex": "2"
+  },
+  {
+    "sentenceArray": [
+      "The",
+      "industrialist_subject",
+      "as",
+      "well",
+      "as",
+      "the",
+      "politician_subject",
+      "have_hv",
+      "/",
+      "has_hv",
+      "been",
+      "invited",
+      "to",
+      "the",
+      "function"
+    ],
+    "sentenceArray1": [
+      "The",
+      "industrialist_subject",
+      "as",
+      "well",
+      "as",
+      "the",
+      "politician_subject",
+      "have/has",
+      "been",
+      "invited",
+      "to",
+      "the",
+      "function"
+    ],
+    "correctHVerb": "has",
+    "questionCategory": "who",
+    "subjectNumber": "singular",
+    "completeSubject": "The industrialist as well as the politician",
+    "subjectVerbAgreementRuleIndex": "2"
+  },
+  {
+    "sentenceArray": [
+      "The",
+      "captain_subject",
+      "along",
+      "with",
+      "the",
+      "teammates_subject",
+      "win_mv",
+      "/",
+      "wins_mv",
+      "the",
+      "match"
+    ],
+    "sentenceArray1": [
+      "The",
+      "captain_subject",
+      "along",
+      "with",
+      "the",
+      "teammates_subject",
+      "win/wins",
+      "the",
+      "match"
+    ],
+    "correctHVerb": "wins",
+    "questionCategory": "who",
+    "subjectNumber": "singular",
+    "completeSubject": "The captain along with the teammates",
+    "subjectVerbAgreementRuleIndex": "2"
+  },
+  {
+    "sentenceArray": [
+      "Either",
+      "the",
+      "cat_subject",
+      "or",
+      "the",
+      "dog_subject",
+      "have_hv",
+      "/",
+      "has_hv",
+      "been",
+      "here"
+    ],
+    "sentenceArray1": [
+      "Either",
+      "the",
+      "cat_subject",
+      "or",
+      "the",
+      "dog_subject",
+      "have/has",
+      "been",
+      "here"
+    ],
+    "correctHVerb": "has",
+    "questionCategory": "who",
+    "subjectNumber": "singular",
+    "completeSubject": "Either the cat or the dog",
+    "subjectVerbAgreementRuleIndex": "4"
+  },
+  {
+    "sentenceArray": [
+      "Neither",
+      "food_subject",
+      "nor",
+      "water_subject",
+      "was_hv",
+      "/",
+      "were_hv",
+      "to",
+      "be",
+      "found",
+      "there"
+    ],
+    "sentenceArray1": [
+      "Neither",
+      "food_subject",
+      "nor",
+      "water_subject",
+      "was/were",
+      "to",
+      "be",
+      "found",
+      "there"
+    ],
+    "correctHVerb": "was",
+    "questionCategory": "what",
+    "subjectNumber": "singular",
+    "completeSubject": "Neither food nor water",
+    "subjectVerbAgreementRuleIndex": "4"
+  },
+  {
+    "sentenceArray": [
+      "Neither",
+      "praise_subject",
+      "nor",
+      "blame_subject",
+      "seem_mv",
+      "/",
+      "seems_mv",
+      "to",
+      "affect",
+      "him"
+    ],
+    "sentenceArray1": [
+      "Neither",
+      "praise_subject",
+      "nor",
+      "blame_subject",
+      "seem/seems",
+      "to",
+      "affect",
+      "him"
+    ],
+    "correctHVerb": "seems",
+    "questionCategory": "what",
+    "subjectNumber": "singular",
+    "completeSubject": "Neither praise nor blame",
+    "subjectVerbAgreementRuleIndex": "4"
+  },
+  {
+    "sentenceArray": [
+      "Either",
+      "he_subject",
+      "or",
+      "I_subject",
+      "am_hv",
+      "/",
+      "are_hv",
+      "mistaken"
+    ],
+    "sentenceArray1": [
+      "Either",
+      "he_subject",
+      "or",
+      "I_subject",
+      "am/are",
+      "mistaken"
+    ],
+    "correctHVerb": "am",
+    "questionCategory": "who",
+    "subjectNumber": "singular",
+    "completeSubject": "Either he or I",
+    "subjectVerbAgreementRuleIndex": "6"
+  },
+  {
+    "sentenceArray": [
+      "Either",
+      "you_subject",
+      "or",
+      "he_subject",
+      "is_hv",
+      "/",
+      "are_hv",
+      "mistaken"
+    ],
+    "sentenceArray1": [
+      "Either",
+      "you_subject",
+      "or",
+      "he_subject",
+      "is/are",
+      "mistaken"
+    ],
+    "correctHVerb": "is",
+    "questionCategory": "who",
+    "subjectNumber": "singular",
+    "completeSubject": "Either you or he",
+    "subjectVerbAgreementRuleIndex": "6"
+  },
+  {
+    "sentenceArray": [
+      "Either",
+      "you_subject",
+      "or",
+      "they_subject",
+      "is_hv",
+      "/",
+      "are_hv",
+      "mistaken"
+    ],
+    "sentenceArray1": [
+      "Either",
+      "you_subject",
+      "or",
+      "they_subject",
+      "is/are",
+      "mistaken"
+    ],
+    "correctHVerb": "are",
+    "questionCategory": "who",
+    "subjectNumber": "plural",
+    "completeSubject": "Either you or they",
+    "subjectVerbAgreementRuleIndex": "6"
+  },
+  {
+    "sentenceArray": [
+      "Every",
+      "boy_subject",
+      "and",
+      "every",
+      "girl_subject",
+      "was_hv",
+      "/",
+      "were_hv",
+      "given",
+      "a",
+      "ticket"
+    ],
+    "sentenceArray1": [
+      "Every",
+      "boy_subject",
+      "and",
+      "every",
+      "girl_subject",
+      "was/were",
+      "given",
+      "a",
+      "ticket"
+    ],
+    "correctHVerb": "was",
+    "questionCategory": "who",
+    "subjectNumber": "singular",
+    "completeSubject": "Every boy and every girl",
+    "subjectVerbAgreementRuleIndex": "8"
+  },
+  {
+    "sentenceArray": [
+      "Each",
+      "of",
+      "these",
+      "things_subject",
+      "is_hv",
+      "/",
+      "are_hv",
+      "found",
+      "in",
+      "India"
+    ],
+    "sentenceArray1": [
+      "Each",
+      "of",
+      "these",
+      "things_subject",
+      "is/are",
+      "found",
+      "in",
+      "India"
+    ],
+    "correctHVerb": "is",
+    "questionCategory": "which",
+    "subjectNumber": "singular",
+    "completeSubject": "Each of these things",
+    "subjectVerbAgreementRuleIndex": "7"
+  },
+  {
+    "sentenceArray": [
+      "Sugar_subject",
+      "and",
+      "salt_subject",
+      "is_hv",
+      "/",
+      "are_hv",
+      "required",
+      "for",
+      "this",
+      "recipe"
+    ],
+    "sentenceArray1": [
+      "Sugar_subject",
+      "and",
+      "salt_subject",
+      "is/are",
+      "required",
+      "for",
+      "this",
+      "recipe"
+    ],
+    "correctHVerb": "are",
+    "questionCategory": "what",
+    "subjectNumber": "plural",
+    "verbNumber": null,
+    "completeSubject": "Sugar and salt",
+    "subjectVerbAgreementRuleIndex": "0"
+  },
+  {
+    "sentenceArray": [
+      "John_subject",
+      "and",
+      "Jack_subject",
+      "both",
+      "is_hv",
+      "/",
+      "are_hv",
+      "good",
+      "friends"
+    ],
+    "sentenceArray1": [
+      "John_subject",
+      "and",
+      "Jack_subject",
+      "both",
+      "is/are",
+      "good",
+      "friends"
+    ],
+    "correctHVerb": "are",
+    "questionCategory": "what",
+    "subjectNumber": "plural",
+    "verbNumber": null,
+    "completeSubject": "John and Jack",
+    "subjectVerbAgreementRuleIndex": "0"
+  },
+  {
+    "sentenceArray": [
+      "The",
+      "horse_subject",
+      "and",
+      "carriage_subject",
+      "is_hv",
+      "/",
+      "are_hv",
+      "at",
+      "the",
+      "door"
+    ],
+    "sentenceArray1": [
+      "The",
+      "horse_subject",
+      "and",
+      "carriage_subject",
+      "is/are",
+      "at",
+      "the",
+      "door"
+    ],
+    "correctHVerb": "is",
+    "questionCategory": "who/what",
+    "subjectNumber": "singular",
+    "completeSubject": "The horse and carriage",
+    "subjectVerbAgreementRuleIndex": "1"
+  },
+  {
+    "sentenceArray": [
+      "Bread_subject",
+      "and",
+      "butter_subject",
+      "is_hv",
+      "/",
+      "are_hv",
+      "his",
+      "only",
+      "food"
+    ],
+    "sentenceArray1": [
+      "Bread_subject",
+      "and",
+      "butter_subject",
+      "is/are",
+      "his",
+      "only",
+      "food"
+    ],
+    "correctHVerb": "is",
+    "questionCategory": "who/what",
+    "subjectNumber": "singular",
+    "completeSubject": "Bread and butter",
+    "subjectVerbAgreementRuleIndex": "1"
+  },
+  {
+    "sentenceArray": [
+      "Honour_subject",
+      "and",
+      "glory_subject",
+      "is_hv",
+      "/",
+      "are_hv",
+      "his",
+      "rewards"
+    ],
+    "sentenceArray1": [
+      "Honour_subject",
+      "and",
+      "glory_subject",
+      "is/are",
+      "his",
+      "rewards"
+    ],
+    "correctHVerb": "is",
+    "questionCategory": "who/what",
+    "subjectNumber": "singular",
+    "completeSubject": "Honour and glory",
+    "subjectVerbAgreementRuleIndex": "1"
+  },
+  {
+    "sentenceArray": [
+      "Sanskrit_subject",
+      "as",
+      "well",
+      "as",
+      "Arabic_subject",
+      "was_hv",
+      "/",
+      "were_hv",
+      "taught",
+      "there"
+    ],
+    "sentenceArray1": [
+      "Sanskrit_subject",
+      "as",
+      "well",
+      "as",
+      "Arabic_subject",
+      "was/were",
+      "taught",
+      "there"
+    ],
+    "correctHVerb": "was",
+    "questionCategory": "what",
+    "subjectNumber": "singular",
+    "completeSubject": "Sanskrit as well as Arabic",
+    "subjectVerbAgreementRuleIndex": "2"
+  },
+  {
+    "sentenceArray": [
+      "The",
+      "ship_subject",
+      "with",
+      "its",
+      "crew_subject",
+      "was_hv",
+      "/",
+      "were_hv",
+      "lost"
+    ],
+    "sentenceArray1": [
+      "The",
+      "ship_subject",
+      "with",
+      "its",
+      "crew_subject",
+      "was/were",
+      "lost"
+    ],
+    "correctHVerb": "was",
+    "questionCategory": "who",
+    "subjectNumber": "singular",
+    "completeSubject": "The ship with its crew",
+    "subjectVerbAgreementRuleIndex": "2"
+  },
+  {
+    "sentenceArray": [
+      "Love_subject",
+      "as",
+      "well",
+      "as",
+      "guidance_subject",
+      "is_hv",
+      "/",
+      "are_hv",
+      "given",
+      "to",
+      "every",
+      "child"
+    ],
+    "sentenceArray1": [
+      "Love_subject",
+      "as",
+      "well",
+      "as",
+      "guidance_subject",
+      "is/are",
+      "given",
+      "to",
+      "every",
+      "child"
+    ],
+    "correctHVerb": "are",
+    "questionCategory": "what",
+    "subjectNumber": "singular",
+    "completeSubject": "Love as well as guidance",
+    "subjectVerbAgreementRuleIndex": "2"
+  },
+  {
+    "sentenceArray": [
+      "The",
+      "house_subject",
+      "with",
+      "its",
+      "contents_subject",
+      "was_hv",
+      "/",
+      "were_hv",
+      "insured"
+    ],
+    "sentenceArray1": [
+      "The",
+      "house_subject",
+      "with",
+      "its",
+      "contents_subject",
+      "was/were",
+      "insured"
+    ],
+    "correctHVerb": "was",
+    "questionCategory": "who",
+    "subjectNumber": "singular",
+    "completeSubject": "The house with its contents",
+    "subjectVerbAgreementRuleIndex": "2"
+  },
+  {
+    "sentenceArray": [
+      "My",
+      "mom_subject",
+      "or",
+      "dad_subject",
+      "is_hv",
+      "/",
+      "are_hv",
+      "going",
+      "to",
+      "the",
+      "function"
+    ],
+    "sentenceArray1": [
+      "My",
+      "mom_subject",
+      "or",
+      "dad_subject",
+      "is/are",
+      "going",
+      "to",
+      "the",
+      "function"
+    ],
+    "correctHVerb": "is",
+    "questionCategory": "who",
+    "subjectNumber": "singular",
+    "completeSubject": "My mom or dad",
+    "subjectVerbAgreementRuleIndex": "4"
+  },
+  {
+    "sentenceArray": [
+      "Neither",
+      "mango_subject",
+      "nor",
+      "orange_subject",
+      "is_mv",
+      "/",
+      "are_mv",
+      "my",
+      "favorite",
+      "fruit"
+    ],
+    "sentenceArray1": [
+      "Neither",
+      "mango_subject",
+      "nor",
+      "orange_subject",
+      "is/are",
+      "my",
+      "favorite",
+      "fruit"
+    ],
+    "correctHVerb": "is",
+    "questionCategory": "what",
+    "subjectNumber": "singular",
+    "completeSubject": "Neither mango nor orange",
+    "subjectVerbAgreementRuleIndex": "4"
+  },
+  {
+    "sentenceArray": [
+      "Either",
+      "Bob_subject",
+      "or",
+      "Ben_subject",
+      "is_mv",
+      "/",
+      "are_mv",
+      "coming",
+      "to",
+      "park"
+    ],
+    "sentenceArray1": [
+      "Either",
+      "Bob_subject",
+      "or",
+      "Ben_subject",
+      "is/are",
+      "coming",
+      "to",
+      "park"
+    ],
+    "correctHVerb": "is",
+    "questionCategory": "what/who",
+    "subjectNumber": "singular",
+    "completeSubject": "Either Bob or Ben",
+    "subjectVerbAgreementRuleIndex": "4"
+  },
+  {
+    "sentenceArray": [
+      "Neither",
+      "John_subject",
+      "nor",
+      "Sheela_subject",
+      "has_hv",
+      "/",
+      "have_hv",
+      "come",
+      "first",
+      "in",
+      "the",
+      "race"
+    ],
+    "sentenceArray1": [
+      "Neither",
+      "John_subject",
+      "nor",
+      "Sheela_subject",
+      "has/have",
+      "come",
+      "first",
+      "in",
+      "the",
+      "race"
+    ],
+    "correctHVerb": "has",
+    "questionCategory": "what/who",
+    "subjectNumber": "singular",
+    "completeSubject": "Neither John nor Sheela",
+    "subjectVerbAgreementRuleIndex": "4"
+  },
+  {
+    "sentenceArray": [
+      "No",
+      "scholarship_subject",
+      "or",
+      "reward_subject",
+      "was_hv",
+      "/",
+      "were_hv",
+      "given",
+      "to",
+      "the",
+      "student",
+      "who",
+      "stood",
+      "first"
+    ],
+    "sentenceArray1": [
+      "No",
+      "scholarship_subject",
+      "or",
+      "reward_subject",
+      "was/were",
+      "given",
+      "to",
+      "the",
+      "student",
+      "who",
+      "stood",
+      "first"
+    ],
+    "correctHVerb": "was",
+    "questionCategory": "what/who",
+    "subjectNumber": "singular",
+    "completeSubject": "No scholarship or reward",
+    "subjectVerbAgreementRuleIndex": "4"
+  },
+  {
+    "sentenceArray": [
+      "Either",
+      "India_subject",
+      "or",
+      "Australia_subject",
+      "has_hv",
+      "/",
+      "have_hv",
+      "the",
+      "chance",
+      "to",
+      "win",
+      "the",
+      "world",
+      "cup"
+    ],
+    "sentenceArray1": [
+      "Either",
+      "India_subject",
+      "or",
+      "Australia_subject",
+      "has/have",
+      "the",
+      "chance",
+      "to",
+      "win",
+      "the",
+      "world",
+      "cup"
+    ],
+    "correctHVerb": "has",
+    "questionCategory": "what/who",
+    "subjectNumber": "singular",
+    "completeSubject": "Either India or Australia",
+    "subjectVerbAgreementRuleIndex": "4"
+  },
+  {
+    "sentenceArray": [
+      "The",
+      "ranger_subject",
+      "or",
+      "the",
+      "camper_subject",
+      "see_mv",
+      "/",
+      "sees_mv",
+      "the",
+      "bear"
+    ],
+    "sentenceArray1": [
+      "The",
+      "ranger_subject",
+      "or",
+      "the",
+      "camper_subject",
+      "see/sees",
+      "the",
+      "bear"
+    ],
+    "correctHVerb": "sees",
+    "questionCategory": "what/who",
+    "subjectNumber": "singular",
+    "completeSubject": "The ranger or the camper",
+    "subjectVerbAgreementRuleIndex": "4"
+  },
+  {
+    "sentenceArray": [
+      "Neither",
+      "he_subject",
+      "nor",
+      "I_subject",
+      "have_hv",
+      "/",
+      "has_hv",
+      "any",
+      "objection",
+      "to",
+      "your",
+      "plan"
+    ],
+    "sentenceArray1": [
+      "Neither",
+      "he_subject",
+      "nor",
+      "I_subject",
+      "have/has",
+      "any",
+      "objection",
+      "to",
+      "your",
+      "plan"
+    ],
+    "correctHVerb": "have",
+    "questionCategory": "what/who",
+    "subjectNumber": "singular",
+    "completeSubject": "Neither he nor I",
+    "subjectVerbAgreementRuleIndex": "4"
+  },
+  {
+    "sentenceArray": [
+      "Either",
+      "you_subject",
+      "or",
+      "Sanny_subject",
+      "has_hv",
+      "/",
+      "have_hv",
+      "to",
+      "take",
+      "the",
+      "responsibility",
+      "for",
+      "the",
+      "mishap"
+    ],
+    "sentenceArray1": [
+      "Either",
+      "you_subject",
+      "or",
+      "Sanny_subject",
+      "has/have",
+      "to",
+      "take",
+      "the",
+      "responsibility",
+      "for",
+      "the",
+      "mishap"
+    ],
+    "correctHVerb": "has",
+    "questionCategory": "what/who",
+    "subjectNumber": "singular",
+    "completeSubject": "Either you or Sanny ",
+    "subjectVerbAgreementRuleIndex": "4"
+  },
+  {
+    "sentenceArray": [
+      "Neither",
+      "director_subject",
+      "nor",
+      "actors_subject",
+      "is_hv",
+      "/",
+      "are_hv",
+      "following",
+      "the",
+      "lines",
+      "closely"
+    ],
+    "sentenceArray1": [
+      "Neither",
+      "director_subject",
+      "nor",
+      "actors_subject",
+      "is/are",
+      "following",
+      "the",
+      "lines",
+      "closely"
+    ],
+    "correctHVerb": "are",
+    "questionCategory": "what/who",
+    "subjectNumber": "plural",
+    "completeSubject": "Neither director nor actors",
+    "subjectVerbAgreementRuleIndex": "5"
+  },
+  {
+    "sentenceArray": [
+      "Neither",
+      "the",
+      "chairman_subject",
+      "nor",
+      "the",
+      "directors_subject",
+      "is_hv",
+      "/",
+      "are_hv",
+      "present",
+      "today"
+    ],
+    "sentenceArray1": [
+      "Neither",
+      "the",
+      "chairman_subject",
+      "nor",
+      "the",
+      "directors_subject",
+      "is/are",
+      "present",
+      "today"
+    ],
+    "correctHVerb": "are",
+    "questionCategory": "what/who",
+    "subjectNumber": "plural",
+    "completeSubject": "Neither the chairman nor the directors",
+    "subjectVerbAgreementRuleIndex": "5"
+  },
+  {
+    "sentenceArray": [
+      "Either",
+      "you_subject",
+      "or",
+      "they_subject",
+      "is_hv",
+      "/",
+      "are_hv",
+      "going",
+      "to",
+      "suffer",
+      "the",
+      "pain"
+    ],
+    "sentenceArray1": [
+      "Either",
+      "you_subject",
+      "or",
+      "they_subject",
+      "is/are",
+      "going",
+      "to",
+      "suffer",
+      "the",
+      "pain"
+    ],
+    "correctHVerb": "are",
+    "questionCategory": "what/who",
+    "subjectNumber": "plural",
+    "completeSubject": "Either you or they",
+    "subjectVerbAgreementRuleIndex": "5"
+  },
+  {
+    "sentenceArray": [
+      "No",
+      "scholarships_subject",
+      "or",
+      "rewards_subject",
+      "was_hv",
+      "/",
+      "were_hv",
+      "given",
+      "to",
+      "the",
+      "student",
+      "who",
+      "stood",
+      "first"
+    ],
+    "sentenceArray1": [
+      "No",
+      "scholarships_subject",
+      "or",
+      "rewards_subject",
+      "was/were",
+      "given",
+      "to",
+      "the",
+      "student",
+      "who",
+      "stood",
+      "first"
+    ],
+    "correctHVerb": "were",
+    "questionCategory": "what/who",
+    "subjectNumber": "plural",
+    "completeSubject": "No scholarships or rewards",
+    "subjectVerbAgreementRuleIndex": "5"
+  },
+  {
+    "sentenceArray": [
+      "The",
+      "rangers_subject",
+      "or",
+      "the",
+      "campers_subject",
+      "see_mv",
+      "/",
+      "sees_mv",
+      "the",
+      "bear"
+    ],
+    "sentenceArray1": [
+      "The",
+      "rangers_subject",
+      "or",
+      "the",
+      "campers_subject",
+      "see/sees",
+      "the",
+      "bear"
+    ],
+    "correctHVerb": "see",
+    "questionCategory": "what/who",
+    "subjectNumber": "plural",
+    "completeSubject": "The rangers or the campers",
+    "subjectVerbAgreementRuleIndex": "5"
+  },
+  {
+    "sentenceArray": [
+      "Every",
+      "child_subject",
+      "have_hv",
+      "/",
+      "has_hv",
+      "eaten",
+      "the",
+      "food"
+    ],
+    "sentenceArray1": [
+      "Every",
+      "child_subject",
+      "have/has",
+      "eaten",
+      "the",
+      "food"
+    ],
+    "correctHVerb": "has",
+    "questionCategory": "who",
+    "subjectNumber": "singular",
+    "completeSubject": "Every child",
+    "subjectVerbAgreementRuleIndex": "8"
+  },
+  {
+    "sentenceArray": [
+      "Each",
+      "of",
+      "these",
+      "substances_subject",
+      "is_hv",
+      "/",
+      "are_hv",
+      "mixed",
+      "in",
+      "the",
+      "mixture"
+    ],
+    "sentenceArray1": [
+      "Each",
+      "of",
+      "these",
+      "substances_subject",
+      "is/are",
+      "mixed",
+      "in",
+      "the",
+      "mixture"
+    ],
+    "correctHVerb": "is",
+    "questionCategory": "which",
+    "subjectNumber": "singular",
+    "completeSubject": "Each of these substances",
+    "subjectVerbAgreementRuleIndex": "7"
+  },
+  {
+    "sentenceArray": [
+      "Everyone",
+      "of",
+      "the",
+      "boys_subject",
+      "love_hv",
+      "/",
+      "loves_hv",
+      "to",
+      "ride",
+      "the",
+      "bike"
+    ],
+    "sentenceArray1": [
+      "Everyone",
+      "of",
+      "the",
+      "boys_subject",
+      "love/loves",
+      "to",
+      "ride",
+      "the",
+      "bike"
+    ],
+    "correctHVerb": "loves",
+    "questionCategory": "which/who",
+    "subjectNumber": "singular",
+    "completeSubject": "Everyone of the boys",
+    "subjectVerbAgreementRuleIndex": "7"
+  },
+  {
+    "sentenceArray": [
+      "Many",
+      "a",
+      "child_subject",
+      "dream_hv",
+      "/",
+      "dreams_hv",
+      "about",
+      "becoming",
+      "famous",
+      "one",
+      "day"
+    ],
+    "sentenceArray1": [
+      "Many",
+      "a",
+      "child_subject",
+      "dream/dreams",
+      "about",
+      "becoming",
+      "famous",
+      "one",
+      "day"
+    ],
+    "correctHVerb": "dreams",
+    "questionCategory": "which/who",
+    "subjectNumber": "singular",
+    "completeSubject": "Many a child",
+    "subjectVerbAgreementRuleIndex": "7"
+  },
+  {
+    "sentenceArray": [
+      "Neither",
+      "of",
+      "my",
+      "friends_subject",
+      "have_hv",
+      "/",
+      "has_hv",
+      "gone",
+      "to",
+      "Canada"
+    ],
+    "sentenceArray1": [
+      "Neither",
+      "of",
+      "my",
+      "friends_subject",
+      "have/has",
+      "gone",
+      "to",
+      "Canada"
+    ],
+    "correctHVerb": "has",
+    "questionCategory": "which/who",
+    "subjectNumber": "singular",
+    "completeSubject": "Neither of my friends",
+    "subjectVerbAgreementRuleIndex": "7"
+  },
+  {
+    "sentenceArray": [
+      "Everyone_subject",
+      "has_hv",
+      "/",
+      "have_hv",
+      "applied",
+      "for",
+      "the",
+      "leave"
+    ],
+    "sentenceArray1": [
+      "Everyone_subject",
+      "has/have",
+      "applied",
+      "for",
+      "the",
+      "leave"
+    ],
+    "correctHVerb": "has",
+    "questionCategory": "which/who",
+    "subjectNumber": "singular",
+    "completeSubject": "Everyone",
+    "subjectVerbAgreementRuleIndex": "7"
+  },
+  {
+    "sentenceArray": [
+      "Everyone_subject",
+      "has_hv",
+      "/",
+      "have_hv",
+      "to",
+      "climb",
+      "to",
+      "the",
+      "top",
+      "of",
+      "the",
+      "mountain"
+    ],
+    "sentenceArray1": [
+      "Everyone_subject",
+      "has/have",
+      "to",
+      "climb",
+      "to",
+      "the",
+      "top",
+      "of",
+      "the",
+      "mountain"
+    ],
+    "correctHVerb": "has",
+    "questionCategory": "which/who",
+    "subjectNumber": "singular",
+    "completeSubject": "Everyone",
+    "subjectVerbAgreementRuleIndex": "7"
+  },
+  {
+    "sentenceArray": [
+      "Neither",
+      "of",
+      "the",
+      "boxers_subject",
+      "was_hv",
+      "/",
+      "were_hv",
+      "able",
+      "to",
+      "score",
+      "a",
+      "decisive",
+      "victory"
+    ],
+    "sentenceArray1": [
+      "Neither",
+      "of",
+      "the",
+      "boxers_subject",
+      "was/were",
+      "able",
+      "to",
+      "score",
+      "a",
+      "decisive",
+      "victory"
+    ],
+    "correctHVerb": "was",
+    "questionCategory": "which/who",
+    "subjectNumber": "singular",
+    "completeSubject": "Neither of the boxers",
+    "subjectVerbAgreementRuleIndex": "7"
+  }
+]
