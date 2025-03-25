@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import video from "../HelpVideo/sub_verb_agreement.webm";
+import video from "../HelpVideo/sub_verb_agreement.mp4";
 
 const AnimationMidContent = () => {
   return (

@@ -1,4 +1,5 @@
 {
+  "homepage": ".",
   "name": "subject_verb_agreement",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +16,7 @@
     "en-inflectors": "^1.0.12",
     "english-olabsnxtg-library": "^1.0.9",
     "html-react-parser": "^4.2.2",
-    "QuizOlabsNxtG": "^1.0.10",
+    "QuizOlabsNxtG": "^1.0.11",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-chartjs-2": "^5.2.0",
