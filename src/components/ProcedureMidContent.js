@@ -26,130 +26,299 @@ const ProcedureMidContent = () => {
           <li>Click on the subject word.</li>
           <li>Click on the submit button to check the answer.</li>
           <li>Clcik on the next step to move to the next step.</li>
-          <div className="text-center m-2">
-            <div>
+
+          <div className="" style={{ display: "flex", alignItems: "start" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               <img
                 className="img-fluid"
-                style={{ border: "1px solid black" }}
+                style={{
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  border: "1px solid black",
+                }}
                 src={step1_1}
-                alt="logo"
+                alt="img"
               />
+              <div className="fw-bold">Fig. 1: Step 1</div>
             </div>
-            <div className="fw-bolder">Fig. 1: Step 1</div>
           </div>
+
           <li>The show answer button will be enable after 3 wrong attempts.</li>
           <li>
             The feedback is provided in 3 ways namely wrong, correct and
             partially correct.
           </li>
-          <div className="d-flex">
-            <div className="col text-center me-2">
-              <img
-                className="img-fluid border border-dark"
-                src={step1_2}
-                alt="logo"
-              />
-              <div className="fw-bolder">Fig. 2: Step 1 feedback</div>
+
+          <div className="row">
+            <div
+              className="col"
+              style={{ display: "flex", alignItems: "start" }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  className="img-fluid"
+                  style={{
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    border: "1px solid black",
+                  }}
+                  src={step1_2}
+                  alt="img"
+                />
+                <div className="fw-bold">Fig. 2: Step 1 feedback</div>
+              </div>
             </div>
-            <div className="col text-center">
-              <img
-                className="img-fluid border border-dark"
-                src={step1_3}
-                alt="logo"
-              />
-              <div className="fw-bolder">Fig. 3: Step 1 feedback</div>
+            <div
+              className="col"
+              style={{ display: "flex", alignItems: "start" }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  className="img-fluid"
+                  style={{
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    border: "1px solid black",
+                  }}
+                  src={step1_3}
+                  alt="img"
+                />
+                <div className="fw-bold">Fig. 3: Step 1 feedback</div>
+              </div>
             </div>
           </div>
-          <div className="text-center m-2">
-            <div>
+
+          <div className="" style={{ display: "flex", alignItems: "start" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               <img
                 className="img-fluid"
-                style={{ border: "1px solid black" }}
+                style={{
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  border: "1px solid black",
+                }}
                 src={step1_4}
-                alt="logo"
+                alt="img"
               />
+              <div className="fw-bold">Fig. 4: Step 1 feedback</div>
             </div>
-            <div className="fw-bolder">Fig. 4: Step 1 feedback</div>
           </div>
         </ul>
         <li>Step 2</li>
         <ul type="disc">
           <li>The complete subject sentence is given.</li>
-          <div className="text-center m-2">
-            <div>
+
+          <div className="" style={{ display: "flex", alignItems: "start" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               <img
                 className="img-fluid"
-                style={{ border: "1px solid black" }}
+                style={{
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  border: "1px solid black",
+                }}
                 src={step2_1}
-                alt="logo"
+                alt="img"
               />
+              <div className="fw-bold">Fig. 5: Step 2</div>
             </div>
-            <div className="fw-bolder">Fig. 5: Step 2</div>
           </div>
+
           <li>
             Click on the singular button if subject clause is singular else
             click on the plural button.
           </li>
           <li>The correct and incorrect feedback is provided.</li>
-          <div className="d-flex">
-            <div className="col text-center me-2">
-              <img
-                className="img-fluid border border-dark"
-                src={step2_2}
-                alt="logo"
-              />
-              <div className="fw-bolder">Fig. 6: Step 2 feedback</div>
+
+          <div className="row">
+            <div
+              className="col"
+              style={{ display: "flex", alignItems: "start" }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  className="img-fluid"
+                  style={{
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    border: "1px solid black",
+                  }}
+                  src={step2_2}
+                  alt="img"
+                />
+                <div className="fw-bold">Fig. 6: Step 2 feedback</div>
+              </div>
             </div>
-            <div className="col text-center">
-              <img
-                className="img-fluid border border-dark"
-                src={step2_3}
-                alt="logo"
-              />
-              <div className="fw-bolder">Fig. 7: Step 2 feedback</div>
+            <div
+              className="col"
+              style={{ display: "flex", alignItems: "start" }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  className="img-fluid"
+                  style={{
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    border: "1px solid black",
+                  }}
+                  src={step2_3}
+                  alt="img"
+                />
+                <div className="fw-bold">Fig. 7: Step 2 feedback</div>
+              </div>
             </div>
           </div>
         </ul>
         <li>Step 3</li>
         <ul type="disc">
           <li>Click on the correct helping verb from the dropdown menu.</li>
-          <div className="d-flex">
-            <div className="col text-center me-2">
-              <img
-                className="img-fluid border border-dark"
-                src={step3_1}
-                alt="logo"
-              />
-              <div className="fw-bolder">Fig. 8: Step 3 MidContent</div>
+
+          <div className="row">
+            <div
+              className="col"
+              style={{ display: "flex", alignItems: "start" }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  className="img-fluid"
+                  style={{
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    border: "1px solid black",
+                  }}
+                  src={step3_1}
+                  alt="img"
+                />
+                <div className="fw-bold">Fig. 8: Step 3 MidContent</div>
+              </div>
             </div>
-            <div className="col text-center">
-              <img
-                className="img-fluid border border-dark"
-                src={step3_2}
-                alt="logo"
-              />
-              <div className="fw-bolder">Fig. 9: Step 3 midContent</div>
+            <div
+              className="col"
+              style={{ display: "flex", alignItems: "start" }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  className="img-fluid"
+                  style={{
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    border: "1px solid black",
+                  }}
+                  src={step3_2}
+                  alt="img"
+                />
+                <div className="fw-bold">Fig. 9: Step 3 midContent</div>
+              </div>
             </div>
           </div>
+
           <li>Click on the submit button to check the answer.</li>
-          <div className="d-flex">
-            <div className="col text-center me-2">
-              <img
-                className="img-fluid border border-dark"
-                src={step3_3}
-                alt="logo"
-              />
-              <div className="fw-bolder">Fig. 10: Step 3 feedback</div>
+
+          <div className="row">
+            <div
+              className="col"
+              style={{ display: "flex", alignItems: "start" }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  className="img-fluid"
+                  style={{
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    border: "1px solid black",
+                  }}
+                  src={step3_3}
+                  alt="img"
+                />
+                <div className="fw-bold">Fig. 10: Step 3 feedback</div>
+              </div>
             </div>
-            <div className="col text-center">
-              <img
-                className="img-fluid border border-dark"
-                src={step3_4}
-                alt="logo"
-              />
-              <div className="fw-bolder">Fig. 11: Step 3 feedback</div>
+            <div
+              className="col"
+              style={{ display: "flex", alignItems: "start" }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  border: "1px solid black",
+                }}
+              >
+                <img
+                  className="img-fluid"
+                  style={{
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                  }}
+                  src={step3_4}
+                  alt="img"
+                />
+                <div className="fw-bold">Fig. 11: Step 3 feedback</div>
+              </div>
             </div>
           </div>
+
           <li>
             Click on the Next sentence button to move to the next sentence.
           </li>
