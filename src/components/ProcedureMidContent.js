@@ -10,22 +10,29 @@ import step3_1 from "../Img/ProcedureImages/step3_mid.png";
 import step3_2 from "../Img/ProcedureImages/step3_mid1.png";
 import step3_3 from "../Img/ProcedureImages/step3_fb1.png";
 import step3_4 from "../Img/ProcedureImages/step3_fb2.png";
+import { useTranslation } from "react-i18next";
 
 const ProcedureMidContent = () => {
+  const { t } = useTranslation();
   return (
     <div
-      className="p-3 scrollbar-primary"
-      style={{ overflow: "auto", width: "100%" }}
+      className="py-3"
+      style={{
+        overflow: "auto",
+        width: "100%",
+        paddingRight: "10px",
+        fontSize: "calc(.6rem + .4vw)",
+      }}
     >
-      <div className="fw-bolder">Procedure:</div>
-      <div>There are theree steps in the activity.</div>
+      <div className="fw-bolder">{t("procedure")}:</div>
+      <div>{t("proc1")}</div>
       <ol type="A">
-        <li>Step 1</li>
+        <li>{t("proc2")}</li>
         <ul type="disc">
-          <li>A sentence is given.</li>
-          <li>Click on the subject word.</li>
-          <li>Click on the submit button to check the answer.</li>
-          <li>Clcik on the next step to move to the next step.</li>
+          <li>{t("proc3")}</li>
+          <li>{t("proc4")}</li>
+          <li>{t("proc5")}</li>
+          <li>{t("proc6")}</li>
 
           <div className="" style={{ display: "flex", alignItems: "start" }}>
             <div
@@ -49,11 +56,8 @@ const ProcedureMidContent = () => {
             </div>
           </div>
 
-          <li>The show answer button will be enable after 3 wrong attempts.</li>
-          <li>
-            The feedback is provided in 3 ways namely wrong, correct and
-            partially correct.
-          </li>
+          <li>{t("proc7")}</li>
+          <li>{t("proc8")}</li>
 
           <div className="row">
             <div
@@ -128,9 +132,9 @@ const ProcedureMidContent = () => {
             </div>
           </div>
         </ul>
-        <li>Step 2</li>
+        <li>{t("proc12")}</li>
         <ul type="disc">
-          <li>The complete subject sentence is given.</li>
+          <li>{t("proc9")}</li>
 
           <div className="" style={{ display: "flex", alignItems: "start" }}>
             <div
@@ -154,11 +158,8 @@ const ProcedureMidContent = () => {
             </div>
           </div>
 
-          <li>
-            Click on the singular button if subject clause is singular else
-            click on the plural button.
-          </li>
-          <li>The correct and incorrect feedback is provided.</li>
+          <li>{t("proc10")}</li>
+          <li>{t("proc11")}</li>
 
           <div className="row">
             <div
@@ -211,9 +212,9 @@ const ProcedureMidContent = () => {
             </div>
           </div>
         </ul>
-        <li>Step 3</li>
+        <li>{t("proc13")}</li>
         <ul type="disc">
-          <li>Click on the correct helping verb from the dropdown menu.</li>
+          <li>{t("proc14")}</li>
 
           <div className="row">
             <div
@@ -266,7 +267,7 @@ const ProcedureMidContent = () => {
             </div>
           </div>
 
-          <li>Click on the submit button to check the answer.</li>
+          <li>{t("proc15")}</li>
 
           <div className="row">
             <div
@@ -319,9 +320,7 @@ const ProcedureMidContent = () => {
             </div>
           </div>
 
-          <li>
-            Click on the Next sentence button to move to the next sentence.
-          </li>
+          <li>{t("proc16")}</li>
         </ul>
       </ol>
     </div>

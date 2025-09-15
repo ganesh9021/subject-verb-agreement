@@ -1,8 +1,10 @@
 import { Button } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
-export const Step3MidContent = ({ jsonData, setStep ,GenerateRandomNo}) => {
+export const Step3MidContent = ({ jsonData, setStep, GenerateRandomNo }) => {
+  const { t } = useTranslation();
   const [cleanedData, setCleanedData] = useState([]);
   const [showFeedback, setShowFeedback] = useState(false);
   const [nextDisable, setNextDisable] = useState(true);
@@ -171,7 +173,7 @@ export const Step3MidContent = ({ jsonData, setStep ,GenerateRandomNo}) => {
                     <select
                       className="p-1"
                       onChange={(e) => handleChange(e)}
-                      style={{ cursor: "pointer" }}
+                      style={{ cursor: "pointer", background: "#F5B946" }}
                     >
                       <option>-----------</option>
                       <option>{verbArr[0]}</option>
@@ -189,8 +191,12 @@ export const Step3MidContent = ({ jsonData, setStep ,GenerateRandomNo}) => {
         <div className="text-center">
           {showFeedback &&
             (feedbackObj.feedbackTitle === "Feedback" ? (
-              <Table striped bordered hover>
-                <thead>
+              <Table
+                className="text-center"
+                bordered
+                style={{ border: "1px solid black" }}
+              >
+                <thead style={{ background: "#0F477E", color: "#ffffff" }}>
                   <tr>
                     <th
                       style={{
@@ -204,15 +210,19 @@ export const Step3MidContent = ({ jsonData, setStep ,GenerateRandomNo}) => {
                     </th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody style={{ background: "#EDF6FA", color: "#000" }}>
                   <tr>
                     <td>{feedbackObj.description}</td>
                   </tr>
                 </tbody>
               </Table>
             ) : (
-              <Table striped bordered hover>
-                <thead>
+              <Table
+                className="text-center"
+                bordered
+                style={{ border: "1px solid black" }}
+              >
+                <thead style={{ background: "#0F477E", color: "#ffffff" }}>
                   <tr>
                     <th
                       style={{
@@ -226,7 +236,7 @@ export const Step3MidContent = ({ jsonData, setStep ,GenerateRandomNo}) => {
                     </th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody style={{ background: "#EDF6FA", color: "#000" }}>
                   <tr style={{ background: "#dff0d8" }}>
                     <td colSpan={2}>{feedbackObj.description}</td>
                   </tr>
@@ -242,15 +252,25 @@ export const Step3MidContent = ({ jsonData, setStep ,GenerateRandomNo}) => {
             disabled={!nextDisable}
             variant="contained"
             onClick={handleSubmit}
+            sx={{
+              background: "#0F477E",
+              color: "#ffffff",
+              fontSize: "calc(.6rem + .4vw)",
+            }}
           >
-            Submit
+            {t("submit")}
           </Button>
           <Button
             disabled={nextDisable}
             variant="contained"
             onClick={handleNextSent}
+            sx={{
+              background: "#0F477E",
+              color: "#ffffff",
+              fontSize: "calc(.6rem + .4vw)",
+            }}
           >
-            Next Sentence
+            {t("next_sentence")}
           </Button>
         </div>
       </div>

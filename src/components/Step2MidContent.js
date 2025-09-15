@@ -2,8 +2,10 @@ import { Button } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import "../css/midcontent.css";
 import { Table } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 export const Step2MidContent = ({ jsonData, setStep }) => {
+  const { t } = useTranslation();
   const [cleanedData, setCleanedData] = useState([]);
   const [showFeedback, setShowFeedback] = useState(false);
   const [completeSubject, setCompleteSubject] = useState(
@@ -119,7 +121,7 @@ export const Step2MidContent = ({ jsonData, setStep }) => {
     }
     setShowFeedback(true);
   };
-  
+
   const handleNextStep = () => {
     setStep((prev) => prev + 1);
   };
@@ -150,8 +152,9 @@ export const Step2MidContent = ({ jsonData, setStep }) => {
       </div>
       <div className="row  mb-3">
         <div className="fw-bolder text-center">
-          Step [2 of 3]. Identify if <span style={{color :"brown"}}>'{jsonData.completeSubject}'</span> clause is
-          singular or plural:
+          Step [2 of 3]. Identify if{" "}
+          <span style={{ color: "brown" }}>'{jsonData.completeSubject}'</span>{" "}
+          clause is singular or plural:
         </div>
       </div>
       <div className="row">
@@ -180,8 +183,12 @@ export const Step2MidContent = ({ jsonData, setStep }) => {
         <div className="text-center">
           {showFeedback &&
             (feedbackObj.feedbackTitle === "Feedback" ? (
-              <Table striped bordered hover>
-                <thead>
+              <Table
+                className="text-center"
+                bordered
+                style={{ border: "1px solid black" }}
+              >
+                <thead style={{ background: "#0F477E", color: "#ffffff" }}>
                   <tr>
                     <th
                       style={{
@@ -195,7 +202,7 @@ export const Step2MidContent = ({ jsonData, setStep }) => {
                     </th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody style={{ background: "#EDF6FA", color: "#000" }}>
                   <tr>
                     <td>Description</td>
                     <td>{feedbackObj.description}</td>
@@ -207,8 +214,12 @@ export const Step2MidContent = ({ jsonData, setStep }) => {
                 </tbody>
               </Table>
             ) : (
-              <Table striped bordered hover>
-                <thead>
+              <Table
+                className="text-center"
+                bordered
+                style={{ border: "1px solid black" }}
+              >
+                <thead style={{ background: "#0F477E", color: "#ffffff" }}>
                   <tr>
                     <th
                       style={{
@@ -222,7 +233,7 @@ export const Step2MidContent = ({ jsonData, setStep }) => {
                     </th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody style={{ background: "#EDF6FA", color: "#000" }}>
                   <tr style={{ background: "#dff0d8" }}>
                     <td colSpan={2}>{feedbackObj.description}</td>
                   </tr>
@@ -237,22 +248,37 @@ export const Step2MidContent = ({ jsonData, setStep }) => {
             disabled={!nextDisable}
             variant="contained"
             onClick={handleSingular}
+            sx={{
+              background: "#0F477E",
+              color: "#ffffff",
+              fontSize: "calc(.6rem + .4vw)",
+            }}
           >
-            Singular
+            {t("singular")}
           </Button>
           <Button
             disabled={!nextDisable}
             variant="contained"
             onClick={handlePlural}
+            sx={{
+              background: "#0F477E",
+              color: "#ffffff",
+              fontSize: "calc(.6rem + .4vw)",
+            }}
           >
-            Plural
+            {t("plural")}
           </Button>
           <Button
             disabled={nextDisable}
             variant="contained"
             onClick={handleNextStep}
+            sx={{
+              background: "#0F477E",
+              color: "#ffffff",
+              fontSize: "calc(.6rem + .4vw)",
+            }}
           >
-            Next Step
+            {t("next_step")}
           </Button>
         </div>
       </div>

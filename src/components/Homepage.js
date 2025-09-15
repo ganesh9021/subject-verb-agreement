@@ -4,8 +4,10 @@ import ActStartPopupContent from "../components/ActStartPopupContent";
 import useWebSocket, { ReadyState } from "react-use-websocket";
 import logconfig from "../config/dbconfig";
 import { SendLogData } from "../config/wslog.js";
+import { useTranslation } from "react-i18next";
 
 const Homepage = () => {
+  const { t } = useTranslation();
   const { sendJsonMessage } = useWebSocket(logconfig.logurl, { share: true });
 
   var arr = [
@@ -17,24 +19,24 @@ const Homepage = () => {
     <>
       <Launchpage
         L_title="Subject verb agreement"
-        L_objective="Objective"
+        L_objective={t("obj")}
         L_act_objective="To understand and apply the grammatical rule that the subject and verb in a sentence."
-        L_learning_outcome="Learning Outcome"
+        L_learning_outcome={t("lo")}
         L_array={arr}
-        L_startbutton="START"
-        RSM_help_tt="Help"
-        RSM_theory_tt="Theory"
-        RSM_procedure_tt="Procedure"
-        RSM_animation_tt="Animation"
-        RSM_vivavoce_tt="Viva voce"
-        RSM_ok="OK"
-        WAWGTL_title_string="What are we going to learn?"
+        L_startbutton={t("start")}
+        RSM_help_tt={t("help")}
+        RSM_theory_tt={t("theory")}
+        RSM_procedure_tt={t("procedure")}
+        RSM_animation_tt={t("animation")}
+        RSM_vivavoce_tt={t("vivavoce")}
+        RSM_ok={t("ok")}
+        WAWGTL_title_string={t("wawgtl")}
         WAWGTL_comp={<ActStartPopupContent />}
-        ok="OK"
-        cancel="CANCEL"
+        ok={t("ok")}
+        cancel={t("cancel")}
         WS_sendJsonMessage={sendJsonMessage}
         WS_SendLogData={SendLogData}
-        labNo="6"
+        labNo="-"
         labShortName="Subject verb agreement"
       />
     </>

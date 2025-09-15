@@ -3,8 +3,13 @@ import React from "react";
 const TheoryMidContent = () => {
   return (
     <div
-      className="p-3 scrollbar-primary"
-      style={{ overflow: "auto", width: "100%", margin: "10px 10px 10px 10px" }}
+      className="py-3"
+      style={{
+        overflow: "auto",
+        width: "100%",
+        paddingRight: "10px",
+        fontSize: "calc(.6rem + .4vw)",
+      }}
     >
       <div className="fw-bolder">Objective</div>
       <ul>To learn the subject verb agreement.</ul>

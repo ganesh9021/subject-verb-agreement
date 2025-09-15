@@ -16,13 +16,13 @@ const MathsQuiz = () => {
       <Quiz
         H_title="Subject verb agreement"
         H_sidebarvisible="hidden"
-        HQ_quittext="Are you sure you want to quit?"
-        HQ_yes="yes"
-        HQ_cancel="cancel"
+        HQ_quittext={t("aysywtq")}
+        HQ_yes={t("yes")}
+        HQ_cancel={t("cancel")}
         quiz_component={<Quizcomp/>}
         WS_sendJsonMessage={sendJsonMessage}
         WS_SendLogData={SendLogData}
-        labNo="123"
+        labNo="-"
         labShortName="Subject verb agreement"         
       />
     </div>

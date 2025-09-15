@@ -4,7 +4,7 @@ import video from "../HelpVideo/sub_verb_agreement.mp4";
 
 const AnimationMidContent = () => {
   return (
-    <div className="py-3" style={{  width: "100%" , paddingRight :"10px"}}>
+    <div className="py-3" style={{ width: "100%", paddingRight: "10px" }}>
       <ReactPlayer
         className="react-player"
         url={video}

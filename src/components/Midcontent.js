@@ -6,8 +6,10 @@ import "../css/midcontent.css";
 import Modal from "react-bootstrap/Modal";
 import { Step2MidContent } from "./Step2MidContent";
 import { Step3MidContent } from "./Step3MidContent";
+import { useTranslation } from "react-i18next";
 
 const Midcontent = () => {
+  const { t } = useTranslation();
   const [randomIndex, setRandomIndex] = useState(0);
   const [clickedWordArray, setClickedWordArray] = useState([]);
   const [subjectCount, setSubjectCount] = useState(0);
@@ -176,14 +178,14 @@ const Midcontent = () => {
   function GenerateRandomNo() {
     let randomNo = Math.floor(Math.random() * data.length);
     setRandomIndex(randomNo);
-    setNextDisable(true)
-    setShowFeedback(false)
+    setNextDisable(true);
+    setShowFeedback(false);
     setIncorrectAttempt(0);
   }
 
   return (
     <div
-      className="scrollbar-primary row d-flex"
+      className="row d-flex"
       style={{
         width: "100vw",
         backgroundColor: "#F2FBFF",
@@ -196,16 +198,19 @@ const Midcontent = () => {
     >
       <div className="col-sm-9 d-flex align-items-center justify-content-center">
         <div
-          className="scrollbar-primary"
           style={{
-            overflow: "auto",
-            background: "#FFFFFF 0% 0% no-repeat padding-box",
-            height: "85%",
+            height: "80vh",
             width: "95%",
+            background: "#FFFFFF 0% 0% no-repeat padding-box",
             borderRadius: "13px",
             boxShadow: "0px 4px 7px #00000029",
             display: "block",
+            padding: "4%",
+            paddingTop: "0%",
+            overflow: "auto",
             overflowX: "hidden",
+            margin: "5px",
+            fontSize: "calc(.6rem + .4vw)",
           }}
         >
           <div
@@ -267,8 +272,14 @@ const Midcontent = () => {
                   <div className="text-center">
                     {showFeedback &&
                       (feedbackObj.feedbackTitle === "Feedback" ? (
-                        <Table striped bordered hover>
-                          <thead>
+                        <Table
+                          className="text-center"
+                          bordered
+                          style={{ border: "1px solid black" }}
+                        >
+                          <thead
+                            style={{ background: "#0F477E", color: "#ffffff" }}
+                          >
                             <tr>
                               <th
                                 style={{
@@ -282,7 +293,9 @@ const Midcontent = () => {
                               </th>
                             </tr>
                           </thead>
-                          <tbody>
+                          <tbody
+                            style={{ background: "#EDF6FA", color: "#000" }}
+                          >
                             <tr>
                               <td>Description</td>
                               <td>{feedbackObj.description}</td>
@@ -294,8 +307,14 @@ const Midcontent = () => {
                           </tbody>
                         </Table>
                       ) : (
-                        <Table striped bordered hover>
-                          <thead>
+                        <Table
+                          className="text-center"
+                          bordered
+                          style={{ border: "1px solid black" }}
+                        >
+                          <thead
+                            style={{ background: "#0F477E", color: "#ffffff" }}
+                          >
                             <tr>
                               <th
                                 style={{
@@ -309,7 +328,9 @@ const Midcontent = () => {
                               </th>
                             </tr>
                           </thead>
-                          <tbody>
+                          <tbody
+                            style={{ background: "#EDF6FA", color: "#000" }}
+                          >
                             <tr style={{ background: "#dff0d8" }}>
                               <td colSpan={2}>{feedbackObj.description}</td>
                             </tr>
@@ -320,28 +341,51 @@ const Midcontent = () => {
                 </div>
                 <div className="row">
                   <div className="d-flex justify-content-around">
-                    <Button variant="contained" onClick={handleSubmit}>
-                      Submit
+                    <Button
+                      variant="contained"
+                      onClick={handleSubmit}
+                      sx={{
+                        background: "#0F477E",
+                        color: "#ffffff",
+                        fontSize: "calc(.6rem + .4vw)",
+                      }}
+                    >
+                      {t("submit")}
                     </Button>
                     <Button
                       disabled={nextDisable}
                       variant="contained"
                       onClick={handelNextStep}
+                      sx={{
+                        background: "#0F477E",
+                        color: "#ffffff",
+                        fontSize: "calc(.6rem + .4vw)",
+                      }}
                     >
-                      Next Step
+                      {t("next")}
                     </Button>
                     <Button
                       disabled={incorrectAttempt < 3}
                       variant="contained"
                       onClick={handleShowAnswer}
+                      sx={{
+                        background: "#0F477E",
+                        color: "#ffffff",
+                        fontSize: "calc(.6rem + .4vw)",
+                      }}
                     >
-                      Show Answer
+                      {t("show_answer")}
                     </Button>
                     <Button
                       variant="contained"
                       onClick={() => setModalOpen(true)}
+                      sx={{
+                        background: "#0F477E",
+                        color: "#ffffff",
+                        fontSize: "calc(.6rem + .4vw)",
+                      }}
                     >
-                      Hint
+                      {t("hint")}
                     </Button>
                   </div>
                 </div>
@@ -369,14 +413,15 @@ const Midcontent = () => {
             <Modal.Header
               closeButton
               style={{
-                background: "rgb(255, 221, 115)",
-                fontWeight: "bolder",
+                background: "#90D5FF",
               }}
             >
-              <Modal.Title id="contained-modal-title-vcenter">Hint</Modal.Title>
+              <Modal.Title id="contained-modal-title-vcenter">
+                <b>{t("hint")}</b>
+              </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <ul>
+              <ul style={{ fontSize: "calc(.6rem + .4vw)" }}>
                 <li>There are {subjectCount} 'Subjects' in this sentence.</li>
                 <li>
                   Subject of the sentence can be identified by asking the
@@ -389,8 +434,16 @@ const Midcontent = () => {
               </ul>
             </Modal.Body>
             <Modal.Footer>
-              <Button variant="outlined" onClick={() => setModalOpen(false)}>
-                Close
+              <Button
+                variant="contained"
+                onClick={() => setModalOpen(false)}
+                sx={{
+                  fontSize: "calc(.6rem + .2vw)",
+                  color: "#ffffff",
+                  background: "#0F477E",
+                }}
+              >
+                {t("close")}
               </Button>
             </Modal.Footer>
           </Modal>
@@ -400,52 +453,46 @@ const Midcontent = () => {
 
       <div className="col-sm-3 d-flex align-items-center">
         <div
-          className="scrollbar-primary"
           style={{
-            overflow: "auto",
-            height: "85%",
+            height: "80vh",
             width: "95%",
+            overflow: "auto",
+            overflowX: "hidden",
             borderRadius: "13px",
             boxShadow: "0px 4px 7px #00000029",
             display: "block",
-            marginLeft: "auto",
-            marginRight: "auto",
             background: "#FFFFFF 0% 0% no-repeat padding-box",
+            margin: "5px",
           }}
         >
           <div
             className="sticky-top text-center subheading"
             style={{
               background: "#002F65",
-              borderRadius: "10px 10px 0px 0px",
+              borderRadius: "13px 13px 0px 0px",
               opacity: "1",
               color: "#FFFFFF",
-              fontSize: "1.3rem",
+              fontSize: "calc(1rem + 0.2vw)",
               fontWeight: "bolder",
             }}
           >
-            Instructions
+            {t("instr")}
           </div>
-          <div style={{ maxHeight: "50vh", padding: "2%", lineHeight: "30px" }}>
+          <div
+            style={{
+              maxHeight: "50vh",
+              padding: "2%",
+              lineHeight: "30px",
+              fontSize: "calc(.6rem + .4vw)",
+            }}
+          >
             <div>
               <ul>
-                <li>Click on appropriate words to Identify the Subject.</li>
-                <li>
-                  If you get the subject correct, click 'Next Step' for the 2nd
-                  step.
-                </li>
-                <li>
-                  Identify whether the subject is singular or plural and click
-                  'Next Step'.
-                </li>
-                <li>
-                  Choose correct form of the verb according to Subject-verb
-                  Agreement.
-                </li>
-                <li>
-                  If you get the Subject-verb Agreement correct, click 'Next
-                  Sentence' for the next sentence.
-                </li>
+                <li>{t("instr1")}</li>
+                <li>{t("instr2")}</li>
+                <li>{t("instr3")}</li>
+                <li>{t("instr4")}</li>
+                <li>{t("instr5")}</li>
               </ul>
             </div>
           </div>
