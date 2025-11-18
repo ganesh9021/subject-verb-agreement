@@ -12,6 +12,7 @@
 
 # production
 /build
+/SubjectVerbAgreement
 
 # misc
 .DS_Store

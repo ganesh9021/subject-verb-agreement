@@ -1,6 +1,6 @@
 {
   "homepage": ".",
-  "name": "subject_verb_agreement",
+  "name": "subject-verb-agreement",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +15,7 @@
     "axios": "^1.12.2",
     "chart.js": "^4.3.0",
     "en-inflectors": "^1.0.12",
-    "english-olabsnxtg-library": "^1.0.10",
+    "english-olabsnxtg-library": "^1.0.11",
     "html-react-parser": "^4.2.2",
     "QuizOlabsNxtG": "^2.0.4",
     "react": "^18.2.0",

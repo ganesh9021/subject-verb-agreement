@@ -3,7 +3,6 @@
   font-size: 10px;
   font-weight: bold;
   margin: 10px 20px 5px 10px;
-
 }
 
 .trafficlight {
@@ -12,23 +11,25 @@
   border-radius: 20px;
   margin: 10px auto 0px auto;
   padding: 10px;
-  width: auto; /* Adjust width for horizontal layout */
-  display: flex; /* Use flexbox for horizontal layout */
-  justify-content: space-around; /* Space out the lights evenly */
-  align-items: center; /* Vertically center the items */
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .red {
-  background: radial-gradient(brown, transparent) repeat scroll 0 0 / 5px 5px red;
+  background: radial-gradient(brown, transparent) repeat scroll 0 0 / 5px 5px
+    red;
   border: 2px dotted red;
   box-shadow: 0 0 20px rgb(17, 17, 17) inset, 0 0 10px red;
   height: 30px;
-  width: 30px; /* Ensure equal width and height for circular shape */
+  width: 30px;
   border-radius: 50%;
 }
 
 .yellow {
-  background: radial-gradient(orange, transparent) repeat scroll 0 0 / 5px 5px yellow;
+  background: radial-gradient(orange, transparent) repeat scroll 0 0 / 5px 5px
+    yellow;
   border: 2px dotted yellow;
   box-shadow: 0 0 20px #111 inset, 0 0 10px yellow;
   height: 30px;
@@ -37,7 +38,8 @@
 }
 
 .green {
-  background: radial-gradient(lime, transparent) repeat scroll 0 0 / 5px 5px green;
+  background: radial-gradient(lime, transparent) repeat scroll 0 0 / 5px 5px
+    green;
   border: 2px dotted lime;
   box-shadow: 0 0 20px #111 inset, 0 0 10px lime;
   height: 30px;
@@ -49,46 +51,76 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content inside the light box */
+  align-items: center;
   justify-content: center;
 }
 
 .blinkRed {
-  -webkit-animation: red 1s;
-  animation: red 1s;
+  -webkit-animation: red 1s infinite;
+  animation: red 1s infinite;
 }
 
 .blinkYellow {
-  -webkit-animation: yellow 1s;
-  animation: yellow 1s;
+  -webkit-animation: yellow 1s infinite;
+  animation: yellow 1s infinite;
 }
 
 .blinkGreen {
-  -webkit-animation: green 1s;
-  animation: green 1s;
+  -webkit-animation: green 1s infinite;
+  animation: green 1s infinite;
 }
 
 /* Keyframe animations */
 @keyframes red {
-  0% { opacity: 0.1; }
-  30% { opacity: 1; }
-  60% { opacity: 0.1; }
-  90% { opacity: 1; }
-  100% { opacity: 0.1; }
+  0% {
+    opacity: 0.1;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }
 
 @keyframes yellow {
-  0% { opacity: 0.1; }
-  30% { opacity: 1; }
-  60% { opacity: 0.1; }
-  90% { opacity: 1; }
-  100% { opacity: 0.1; }
+  0% {
+    opacity: 0.1;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }
 
 @keyframes green {
-  0% { opacity: 0.1; }
-  30% { opacity: 1; }
-  60% { opacity: 0.1; }
-  90% { opacity: 1; }
-  100% { opacity: 0.1; }
+  0% {
+    opacity: 0.1;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }

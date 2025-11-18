@@ -1,11 +1,23 @@
 {
-  "act1": "In this activity, we are going to learn about the subject verb agreement.",
+  "title": "Subject-verb agreement",
+  "objective": "To identify the subject and verb in the sentence. Also, identify the singular and plural nouns in the sentence.",
+  "learningOutcome1": "Students will be able to identify the subject and verb in the sentence.",
+  "learningOutcome2": "Students will be able to identify the singular and plural nouns in the sentence.",
 
-  "instr1": "Click on appropriate words to Identify the Subject.",
-  "instr2": "If you get the subject correct, click \"Next Step\" for the 2nd step.",
-  "instr3": "Identify whether the subject is singular or plural and click 'Next Step'.",
-  "instr4": "Choose correct form of the verb according to Subject-verb Agreement.",
-  "instr5": "If you get the Subject-verb Agreement correct, click 'Next Sentence' for the next sentence.",
+  "act1": "In this activity, learn about the subject-verb agreement.",
+  "act2": "There are three steps in the activity",
+  "act3": "Step 1: Identify the subjects present in the sentences.",
+  "act4": "Step 2: Identify the form of the noun, singular or plural.",
+  "act5": "Step 3: Choose the correct form of the verb for the given subjects in the sentences.",
+
+  "instr1": "A sentence is given in the sentence.",
+  "instr2": "Step 1: Select subjects in the sentence.",
+  "instr3": "Click on the appropriate words to select the subject(s) in the sentence.",
+  "instr4": "On correct subject selection, click \"NEXT STEP\" to go to next step.",
+  "instr5": "In step 2, identify whether the subject is singular or plural.",
+  "instr6": "Click \"NEXT STEP\" to go step 3.",
+  "instr7": "Choose the correct form of the verb according to Subject-verb Agreement.",
+  "instr8": "On correct selection, click on \"NEXT SENTENCE\" for the next sentence.",
 
   "q_instr1": "Read all instructions given below.",
   "q_instr2": "The quiz will start after clicking on the \"OK\" button, along with a timer.",
@@ -66,5 +78,11 @@
   "singular": "SINGULAR",
   "plural": "PLURAL",
   "next_sentence": "NEXT SENTENCE",
-  "submit": "SUBMIT"
+  "submit": "SUBMIT",
+
+  "Developed_by": "Developed by",
+  "C_DAC_Mumbai": "C-DAC Mumbai",
+  "Funded_by": "Funded by",
+  "Ministry": "Ministry of Electronics and Information Technology || Ministry of Education",
+  "Government_of_India": "Government of India"
 }

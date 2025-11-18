@@ -1,11 +1,11 @@
-import React from 'react';
-import ProcedureMidContent from './ProcedureMidContent';
+import React from "react";
+import ProcedureMidContent from "./ProcedureMidContent";
 import QuizPopupContent from "../components/QuizPopupContent";
 import useWebSocket, { ReadyState } from "react-use-websocket";
 import logconfig from "../config/dbconfig";
 import { SendLogData } from "../config/wslog.js";
 import { TheoryPageWithLabel } from "english-olabsnxtg-library";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 const Procedure = () => {
   const { t } = useTranslation();
@@ -13,7 +13,7 @@ const Procedure = () => {
   return (
     <>
       <TheoryPageWithLabel
-        H_title="Subject verb agreement"
+        H_title={t("title")}
         HQ_yes={t("yes")}
         HQ_cancel={t("cancel")}
         HQ_quittext={t("aysywtq")}
@@ -31,7 +31,7 @@ const Procedure = () => {
         WS_sendJsonMessage={sendJsonMessage}
         WS_SendLogData={SendLogData}
         labNo="-"
-        labShortName="Subject verb agreement"
+        labShortName={t("title")}
       />
     </>
   );

@@ -7,6 +7,12 @@ const ActStartPopupContent = () => {
   return (
     <>
       <ListItemText sx={{ display: "list-item" }}>{t("act1")}</ListItemText>
+      <ListItemText sx={{ display: "list-item" }}>{t("act2")}</ListItemText>
+      <ul type="none">
+        <ListItemText sx={{ display: "list-item" }}>{t("act3")}</ListItemText>
+        <ListItemText sx={{ display: "list-item" }}>{t("act4")}</ListItemText>
+        <ListItemText sx={{ display: "list-item" }}>{t("act5")}</ListItemText>
+      </ul>
     </>
   );
 };

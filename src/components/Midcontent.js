@@ -60,16 +60,18 @@ const Midcontent = () => {
   };
 
   const handleSubmit = () => {
-    setShowFeedback(true); //To show the feedback
+    setShowFeedback(true);
     let subjectArray = data[randomIndex].sentenceArray.filter((item) =>
       item.includes("_subject")
     );
     let finalResult = compareArrays(clickedWordArray, subjectArray);
-    // console.log(finalResult);
+
+    // Remove all previous blinking lights
+    clearAllBlinking();
 
     if (finalResult === true) {
-      // alert("You are Correct!");
       setNextDisable(false);
+
       let ele = document.getElementsByClassName("green");
       for (let i = 0; i < ele.length; i++) {
         ele[i].classList.add("blinkGreen");
@@ -81,19 +83,21 @@ const Midcontent = () => {
         document.getElementById(subjectArray[i]).style.border =
           "2px solid rgb(72, 124, 18)";
       }
+
       setFeedbackObj((prevState) => ({
         ...prevState,
         feedbackTitle: "Result",
         description: "Click on 'Next Step' to continue.",
       }));
     } else if (finalResult === "partially correct") {
-      // alert("Partially correct!");
       setIncorrectAttempt(incorrectAttempt + 1);
+
+      let ele = document.getElementsByClassName("yellow");
+      for (let i = 0; i < ele.length; i++) {
+        ele[i].classList.add("blinkYellow");
+      }
+
       if (clickedWordArray.length === 1) {
-        let ele = document.getElementsByClassName("yellow");
-        for (let i = 0; i < ele.length; i++) {
-          ele[i].classList.add("blinkYellow");
-        }
         setFeedbackObj((prevState) => ({
           ...prevState,
           feedbackTitle: "Feedback",
@@ -102,11 +106,6 @@ const Midcontent = () => {
           remedy: "Select complete 'Subject' from the sentence.",
         }));
       } else {
-        setIncorrectAttempt(incorrectAttempt + 1);
-        let ele = document.getElementsByClassName("yellow");
-        for (let i = 0; i < ele.length; i++) {
-          ele[i].classList.add("blinkYellow");
-        }
         setFeedbackObj((prevState) => ({
           ...prevState,
           feedbackTitle: "Feedback",
@@ -116,12 +115,13 @@ const Midcontent = () => {
         }));
       }
     } else {
-      // alert("Incorrect!");
       setIncorrectAttempt(incorrectAttempt + 1);
+
       let ele = document.getElementsByClassName("red");
       for (let i = 0; i < ele.length; i++) {
         ele[i].classList.add("blinkRed");
       }
+
       setFeedbackObj((prevState) => ({
         ...prevState,
         feedbackTitle: "Feedback",
@@ -132,9 +132,17 @@ const Midcontent = () => {
     }
   };
 
+  const clearAllBlinking = () => {
+    const allLights = document.querySelectorAll(".red, .yellow, .green");
+    allLights.forEach((el) => {
+      el.classList.remove("blinkRed", "blinkYellow", "blinkGreen");
+    });
+  };
+
   const handelNextStep = () => {
     setStep(step + 1);
     setShowFeedback(false);
+    setClickedWordArray([]);
   };
 
   const handleShowAnswer = () => {
@@ -151,7 +159,6 @@ const Midcontent = () => {
     }
   };
 
-  /*General functions*/
   function compareArrays(arr1, arr2) {
     // Check if all elements in arr1 are in arr2 and vice versa
     const allMatch =
@@ -258,6 +265,7 @@ const Midcontent = () => {
                   <div className="text-center">
                     {data[randomIndex].sentenceArray1.map((item, index) => (
                       <div
+                        key={index}
                         className="btn btn-outline m-1"
                         id={item}
                         style={{ border: "2px solid #04B4AE" }}
@@ -493,6 +501,9 @@ const Midcontent = () => {
                 <li>{t("instr3")}</li>
                 <li>{t("instr4")}</li>
                 <li>{t("instr5")}</li>
+                <li>{t("instr6")}</li>
+                <li>{t("instr7")}</li>
+                <li>{t("instr8")}</li>
               </ul>
             </div>
           </div>

@@ -69,6 +69,8 @@ export const Step2MidContent = ({ jsonData, setStep }) => {
   };
 
   const handleSingular = () => {
+    clearAllBlinking();
+
     if ("singular" !== jsonData.subjectNumber) {
       setFeedbackObj((prevState) => ({
         ...prevState,
@@ -76,6 +78,7 @@ export const Step2MidContent = ({ jsonData, setStep }) => {
         description: "Wrong answer",
         remedy: `Observe the clause ${jsonData.completeSubject} and accordingly decide the 'Subject' number.`,
       }));
+
       let ele = document.getElementsByClassName("red");
       for (let i = 0; i < ele.length; i++) {
         ele[i].classList.add("blinkRed");
@@ -87,15 +90,19 @@ export const Step2MidContent = ({ jsonData, setStep }) => {
         feedbackTitle: "Result",
         description: "Click on 'Next Step' to continue.",
       }));
+
       let ele = document.getElementsByClassName("green");
       for (let i = 0; i < ele.length; i++) {
         ele[i].classList.add("blinkGreen");
       }
     }
+
     setShowFeedback(true);
   };
 
   const handlePlural = () => {
+    clearAllBlinking();
+
     if ("plural" !== jsonData.subjectNumber) {
       setFeedbackObj((prevState) => ({
         ...prevState,
@@ -103,6 +110,7 @@ export const Step2MidContent = ({ jsonData, setStep }) => {
         description: "Wrong answer",
         remedy: `Observe the clause ${jsonData.completeSubject} and accordingly decide the 'Subject' number.`,
       }));
+
       let ele = document.getElementsByClassName("red");
       for (let i = 0; i < ele.length; i++) {
         ele[i].classList.add("blinkRed");
@@ -114,16 +122,25 @@ export const Step2MidContent = ({ jsonData, setStep }) => {
         feedbackTitle: "Result",
         description: "Click on 'Next Step' to continue.",
       }));
+
       let ele = document.getElementsByClassName("green");
       for (let i = 0; i < ele.length; i++) {
         ele[i].classList.add("blinkGreen");
       }
     }
+
     setShowFeedback(true);
   };
 
   const handleNextStep = () => {
     setStep((prev) => prev + 1);
+  };
+
+  const clearAllBlinking = () => {
+    const allLights = document.querySelectorAll(".red, .yellow, .green");
+    allLights.forEach((el) => {
+      el.classList.remove("blinkRed", "blinkYellow", "blinkGreen");
+    });
   };
 
   return (

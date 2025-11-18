@@ -9,18 +9,14 @@ import { useTranslation } from "react-i18next";
 const Homepage = () => {
   const { t } = useTranslation();
   const { sendJsonMessage } = useWebSocket(logconfig.logurl, { share: true });
-
-  var arr = [
-    "Student will recognize the correct subject-verb agreement in both written and spoken sentences",
-    "Student will able to apply the rules of subject-verb agreement.",
-  ];
+  var arr = [t("learningOutcome1"), t("learningOutcome2")];
 
   return (
     <>
       <Launchpage
-        L_title="Subject verb agreement"
+        L_title={t("title")}
         L_objective={t("obj")}
-        L_act_objective="To understand and apply the grammatical rule that the subject and verb in a sentence."
+        L_act_objective={t("objective")}
         L_learning_outcome={t("lo")}
         L_array={arr}
         L_startbutton={t("start")}
@@ -37,7 +33,12 @@ const Homepage = () => {
         WS_sendJsonMessage={sendJsonMessage}
         WS_SendLogData={SendLogData}
         labNo="-"
-        labShortName="Subject verb agreement"
+        labShortName={t("title")}
+        L_Developby={t("Developed_by")}
+        L_CDACMum={t("C_DAC_Mumbai")}
+        L_fundedby={t("Funded_by")}
+        L_ministry={t("Ministry")}
+        L_govofindia={t("Government_of_India")}
       />
     </>
   );

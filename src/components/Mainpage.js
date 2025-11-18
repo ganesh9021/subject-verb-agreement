@@ -14,7 +14,7 @@ const Mainpage = () => {
   return (
     <>
       <OlabsPage
-        H_title="Subject verb agreement"
+        H_title={t("title")}
         HQ_yes={t("yes")}
         HQ_cancel={t("cancel")}
         HQ_quittext={t("aysywtq")}
@@ -30,7 +30,7 @@ const Mainpage = () => {
         WS_sendJsonMessage={sendJsonMessage}
         WS_SendLogData={SendLogData}
         labNo="-"
-        labShortName="Subject verb agreement"
+        labShortName={t("title")}
       />
     </>
   );

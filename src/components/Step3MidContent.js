@@ -9,9 +9,6 @@ export const Step3MidContent = ({ jsonData, setStep, GenerateRandomNo }) => {
   const [showFeedback, setShowFeedback] = useState(false);
   const [nextDisable, setNextDisable] = useState(true);
   const [dropdownvalue, setDropdownvalue] = useState("");
-  const [completeSubject, setCompleteSubject] = useState(
-    jsonData.completeSubject.split(" ")
-  );
   const [verbArr, setVerbArr] = useState([]);
   const [feedbackObj, setFeedbackObj] = useState({
     feedbackTitle: "",
@@ -22,7 +19,6 @@ export const Step3MidContent = ({ jsonData, setStep, GenerateRandomNo }) => {
   useEffect(() => {
     handleData();
 
-    setCompleteSubject(jsonData.completeSubject.split(" "));
     const redElements = document.getElementsByClassName("red");
     const yellowElements = document.getElementsByClassName("yellow");
     const greenElements = document.getElementsByClassName("green");
@@ -80,7 +76,8 @@ export const Step3MidContent = ({ jsonData, setStep, GenerateRandomNo }) => {
   };
 
   const handleSubmit = () => {
-    // console.log(dropdownvalue);
+    clearAllBlinking();
+
     if (dropdownvalue === jsonData.correctHVerb) {
       setFeedbackObj((prevState) => ({
         ...prevState,
@@ -88,22 +85,26 @@ export const Step3MidContent = ({ jsonData, setStep, GenerateRandomNo }) => {
         description:
           "Your answer is correct! Click on 'Next Sentence' to solve next question.",
       }));
+
       let ele = document.getElementsByClassName("green");
       for (let i = 0; i < ele.length; i++) {
         ele[i].classList.add("blinkGreen");
       }
+
       setNextDisable(false);
     } else {
       setFeedbackObj((prevState) => ({
         ...prevState,
         feedbackTitle: "Feedback",
-        description: "Selected correct verb.",
+        description: "Select correct verb.",
       }));
+
       let ele = document.getElementsByClassName("red");
       for (let i = 0; i < ele.length; i++) {
         ele[i].classList.add("blinkRed");
       }
     }
+
     setShowFeedback(true);
   };
 
@@ -111,6 +112,14 @@ export const Step3MidContent = ({ jsonData, setStep, GenerateRandomNo }) => {
     setStep(1);
     GenerateRandomNo();
   };
+
+  const clearAllBlinking = () => {
+    const allLights = document.querySelectorAll(".red, .yellow, .green");
+    allLights.forEach((el) => {
+      el.classList.remove("blinkRed", "blinkYellow", "blinkGreen");
+    });
+  };
+
   return (
     <div className="p-3">
       <div className="row">
