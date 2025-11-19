@@ -60,28 +60,36 @@ const Midcontent = () => {
   };
 
   const handleSubmit = () => {
+    // Clear any previous blinking
+    clearAllBlinking();
+
     setShowFeedback(true);
+
+    // Get all subject elements from the sentence
     let subjectArray = data[randomIndex].sentenceArray.filter((item) =>
       item.includes("_subject")
     );
+
     let finalResult = compareArrays(clickedWordArray, subjectArray);
 
-    // Remove all previous blinking lights
-    clearAllBlinking();
-
     if (finalResult === true) {
+      // Correct selection
       setNextDisable(false);
 
-      let ele = document.getElementsByClassName("green");
-      for (let i = 0; i < ele.length; i++) {
-        ele[i].classList.add("blinkGreen");
+      // Blink green light
+      const greenLights = document.getElementsByClassName("green");
+      for (let i = 0; i < greenLights.length; i++) {
+        greenLights[i].style.animation = "green 1s infinite";
+        greenLights[i].style.WebkitAnimation = "green 1s infinite";
       }
 
+      // Highlight correct subjects
       for (let i = 0; i < subjectArray.length; i++) {
-        document.getElementById(subjectArray[i]).style.background =
-          "rgb(154, 213, 91)";
-        document.getElementById(subjectArray[i]).style.border =
-          "2px solid rgb(72, 124, 18)";
+        const el = document.getElementById(subjectArray[i]);
+        if (el) {
+          el.style.background = "rgb(154, 213, 91)";
+          el.style.border = "2px solid rgb(72, 124, 18)";
+        }
       }
 
       setFeedbackObj((prevState) => ({
@@ -90,11 +98,14 @@ const Midcontent = () => {
         description: "Click on 'Next Step' to continue.",
       }));
     } else if (finalResult === "partially correct") {
+      // Partially correct
       setIncorrectAttempt(incorrectAttempt + 1);
 
-      let ele = document.getElementsByClassName("yellow");
-      for (let i = 0; i < ele.length; i++) {
-        ele[i].classList.add("blinkYellow");
+      // Blink yellow light
+      const yellowLights = document.getElementsByClassName("yellow");
+      for (let i = 0; i < yellowLights.length; i++) {
+        yellowLights[i].style.animation = "yellow 1s infinite";
+        yellowLights[i].style.WebkitAnimation = "yellow 1s infinite";
       }
 
       if (clickedWordArray.length === 1) {
@@ -102,7 +113,7 @@ const Midcontent = () => {
           ...prevState,
           feedbackTitle: "Feedback",
           description:
-            "The selected word/words is/are the part of the 'Subject'(s).",
+            "The selected word/words is/are part of the 'Subject'(s).",
           remedy: "Select complete 'Subject' from the sentence.",
         }));
       } else {
@@ -111,15 +122,18 @@ const Midcontent = () => {
           feedbackTitle: "Feedback",
           description:
             "The selected words contain part of the subject(s) as well as other words.",
-          remedy: "Select only 'Subject' part from the given sentence.",
+          remedy: "Select only the 'Subject' part from the given sentence.",
         }));
       }
     } else {
+      // Incorrect selection
       setIncorrectAttempt(incorrectAttempt + 1);
 
-      let ele = document.getElementsByClassName("red");
-      for (let i = 0; i < ele.length; i++) {
-        ele[i].classList.add("blinkRed");
+      // Blink red light
+      const redLights = document.getElementsByClassName("red");
+      for (let i = 0; i < redLights.length; i++) {
+        redLights[i].style.animation = "red 1s infinite";
+        redLights[i].style.WebkitAnimation = "red 1s infinite";
       }
 
       setFeedbackObj((prevState) => ({
@@ -127,15 +141,15 @@ const Midcontent = () => {
         feedbackTitle: "Feedback",
         description: "No 'Subject'(s) selected.",
         remedy:
-          "Select 'Subject'(s) of the given sentence and by clicking on the word.",
+          "Select 'Subject'(s) of the given sentence by clicking on the word(s).",
       }));
     }
   };
-
   const clearAllBlinking = () => {
     const allLights = document.querySelectorAll(".red, .yellow, .green");
     allLights.forEach((el) => {
-      el.classList.remove("blinkRed", "blinkYellow", "blinkGreen");
+      el.style.animation = "none";
+      el.style.WebkitAnimation = "none";
     });
   };
 

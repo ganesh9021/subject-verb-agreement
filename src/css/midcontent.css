@@ -9,12 +9,13 @@
   background: #353f40;
   border: 3px solid rgb(133, 133, 148);
   border-radius: 20px;
-  margin: 10px auto 0px auto;
+  margin: 10px auto 0 auto;
   padding: 10px;
-  width: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 300px;
+  max-width: 50%;
 }
 
 .red {
@@ -56,21 +57,17 @@
 }
 
 .blinkRed {
-  -webkit-animation: red 1s infinite;
   animation: red 1s infinite;
 }
 
 .blinkYellow {
-  -webkit-animation: yellow 1s infinite;
   animation: yellow 1s infinite;
 }
 
 .blinkGreen {
-  -webkit-animation: green 1s infinite;
   animation: green 1s infinite;
 }
 
-/* Keyframe animations */
 @keyframes red {
   0% {
     opacity: 0.1;
