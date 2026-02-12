@@ -52,7 +52,7 @@ const ProcedureMidContent = () => {
                 src={step1_1}
                 alt="img"
               />
-              <div className="fw-bold">Fig. 1: Step 1</div>
+              <div className="fw-bold">{t("proc_image_1")}</div>
             </div>
           </div>
 
@@ -81,7 +81,7 @@ const ProcedureMidContent = () => {
                   src={step1_2}
                   alt="img"
                 />
-                <div className="fw-bold">Fig. 2: Step 1 feedback</div>
+                <div className="fw-bold">{t("proc_image_2")}</div>
               </div>
             </div>
             <div
@@ -105,7 +105,7 @@ const ProcedureMidContent = () => {
                   src={step1_3}
                   alt="img"
                 />
-                <div className="fw-bold">Fig. 3: Step 1 feedback</div>
+                <div className="fw-bold">{t("proc_image_3")}</div>
               </div>
             </div>
           </div>
@@ -128,7 +128,7 @@ const ProcedureMidContent = () => {
                 src={step1_4}
                 alt="img"
               />
-              <div className="fw-bold">Fig. 4: Step 1 feedback</div>
+              <div className="fw-bold">{t("proc_image_4")}</div>
             </div>
           </div>
         </ul>
@@ -154,7 +154,7 @@ const ProcedureMidContent = () => {
                 src={step2_1}
                 alt="img"
               />
-              <div className="fw-bold">Fig. 5: Step 2</div>
+              <div className="fw-bold">{t("proc_image_5")}</div>
             </div>
           </div>
 
@@ -183,7 +183,7 @@ const ProcedureMidContent = () => {
                   src={step2_2}
                   alt="img"
                 />
-                <div className="fw-bold">Fig. 6: Step 2 feedback</div>
+                <div className="fw-bold">{t("proc_image_6")}</div>
               </div>
             </div>
             <div
@@ -207,7 +207,7 @@ const ProcedureMidContent = () => {
                   src={step2_3}
                   alt="img"
                 />
-                <div className="fw-bold">Fig. 7: Step 2 feedback</div>
+                <div className="fw-bold">{t("proc_image_7")}</div>
               </div>
             </div>
           </div>
@@ -238,7 +238,7 @@ const ProcedureMidContent = () => {
                   src={step3_1}
                   alt="img"
                 />
-                <div className="fw-bold">Fig. 8: Step 3 MidContent</div>
+                <div className="fw-bold">{t("proc_image_8")}</div>
               </div>
             </div>
             <div
@@ -262,7 +262,7 @@ const ProcedureMidContent = () => {
                   src={step3_2}
                   alt="img"
                 />
-                <div className="fw-bold">Fig. 9: Step 3 midContent</div>
+                <div className="fw-bold">{t("proc_image_9")}</div>
               </div>
             </div>
           </div>
@@ -291,7 +291,7 @@ const ProcedureMidContent = () => {
                   src={step3_3}
                   alt="img"
                 />
-                <div className="fw-bold">Fig. 10: Step 3 feedback</div>
+                <div className="fw-bold">{t("proc_image_10")}</div>
               </div>
             </div>
             <div
@@ -303,7 +303,6 @@ const ProcedureMidContent = () => {
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
-                  border: "1px solid black",
                 }}
               >
                 <img
@@ -311,11 +310,12 @@ const ProcedureMidContent = () => {
                   style={{
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
+                    border: "1px solid black",
                   }}
                   src={step3_4}
                   alt="img"
                 />
-                <div className="fw-bold">Fig. 11: Step 3 feedback</div>
+                <div className="fw-bold">{t("proc_image_11")}</div>
               </div>
             </div>
           </div>

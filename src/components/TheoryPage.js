@@ -30,7 +30,7 @@ const TheoryPage = () => {
         RSM_QuizPopupContent_comp={<QuizPopupContent />}
         WS_sendJsonMessage={sendJsonMessage}
         WS_SendLogData={SendLogData}
-        labNo="-"
+        labNo="11"
         labShortName={t("title")}
       />
     </>

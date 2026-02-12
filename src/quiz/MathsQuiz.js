@@ -6,7 +6,7 @@ import useWebSocket, { ReadyState } from "react-use-websocket";
 import logconfig from "../config/dbconfig";
 import { SendLogData } from "../config/wslog.js";
 
-const MathsQuiz = () => {
+const MathsQuiz = ({ currentQuesJson }) => {
   const { sendJsonMessage } = useWebSocket(logconfig.logurl, { share: true });
   const { t, i18n } = useTranslation();
 
@@ -18,10 +18,10 @@ const MathsQuiz = () => {
         HQ_quittext={t("aysywtq")}
         HQ_yes={t("yes")}
         HQ_cancel={t("cancel")}
-        quiz_component={<Quizcomp />}
+        quiz_component={<Quizcomp currentQuesJson={currentQuesJson} />}
         WS_sendJsonMessage={sendJsonMessage}
         WS_SendLogData={SendLogData}
-        labNo="-"
+        labNo="11"
         labShortName={t("title")}
       />
     </div>

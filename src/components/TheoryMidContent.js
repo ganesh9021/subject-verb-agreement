@@ -1,8 +1,6 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 
 const TheoryMidContent = () => {
-  const { t } = useTranslation();
   return (
     <div
       className="py-3"
@@ -13,8 +11,11 @@ const TheoryMidContent = () => {
         fontSize: "calc(.6rem + .4vw)",
       }}
     >
-      <div className="fw-bolder">{t("obj")}</div>
-      <ul>{t("objective")}</ul>
+      <div className="fw-bolder">Objective</div>
+      <ul>
+        To identify the subject and verb in the sentence. Also, identify the
+        singular and plural nouns in the sentence.
+      </ul>
       <div className="fw-bolder">Basic Rule:</div>
       <div>
         <p>
